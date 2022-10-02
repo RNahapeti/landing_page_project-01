@@ -6,3 +6,47 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #1F2937;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .logo {
+    color: #F9FAF8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul.navbar {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
