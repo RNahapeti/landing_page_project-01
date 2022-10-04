@@ -9,7 +9,7 @@
     --dark-bg-header: #F9FAF8;
     --dark-bg-text: #E5E7EB;
     --light-bg-header: #1F2937;
-    --light-bg-text: #1F2937;
+    --light-bg-text: #6C747D;
 }
 
 body {
@@ -81,7 +81,7 @@ nav .logo {
 
 .hero-text h1 {
     color: var(--dark-bg-header);
-    margin: 1rem;
+    margin: 1rem 0;
     font-size: 3rem;
     font-weight: 900;
 }
@@ -103,14 +103,24 @@ nav .logo {
     margin-bottom: 1rem;
 }
 
+.hero-text button:hover {
+    background-color: white;
+    color: #3883F6;
+}
+
 .landing .image-placeholder {
     width: 85%;
-    background-color: var(--light-bg-color);
+    background-color: var(--light-bg-text);
     height: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    color: white;
+}
+
+.image-placeholder h4 {
+    font-weight: 400;
 }
 
 @media all and (min-width: 600px) {
@@ -122,5 +132,21 @@ nav .logo {
 
     .container {
         padding: 1rem;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .landing .container {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .landing .container > * {
+        flex: 1;
+    }
+
+    .hero-text {
+        text-align: left;
+        align-items: flex-start;
     }
 }
