@@ -4,6 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    --dark-bg-color: #1F2937;
+    --light-bg-color: #E5E7EB;
+    --dark-bg-header: #F9FAF8;
+    --dark-bg-text: #E5E7EB;
+    --light-bg-header: #1F2937;
+    --light-bg-text: #1F2937;
 }
 
 body {
@@ -13,7 +19,7 @@ body {
 }
 
 nav {
-    background-color: #1F2937;
+    background-color: var(--dark-bg-color);
 }
 
 .container {
@@ -31,7 +37,7 @@ nav .container {
 }
 
 nav .logo {
-    color: #F9FAF8;
+    color: var(--dark-bg-header);
     font-size: 1.5rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -48,7 +54,7 @@ nav .logo {
 
 .nav-links a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: var(--dark-bg-text);
 }
 
 .nav-links a:hover {
