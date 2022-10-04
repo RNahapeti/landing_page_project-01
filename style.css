@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,700,900');
 
 * {
     box-sizing: border-box;
@@ -59,6 +59,58 @@ nav .logo {
 
 .nav-links a:hover {
     color: coral;
+}
+
+.landing {
+    background-color: var(--dark-bg-color);
+    padding: 1rem 0 2.5rem;
+}
+
+.landing .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: var(--dark-bg-header);
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero-text p {
+    color: var(--dark-bg-text);
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.hero-text button {
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 2rem;
+    color: white;
+    font-weight: 700;
+    background-color: #3883F6;
+    margin-bottom: 1rem;
+}
+
+.landing .image-placeholder {
+    width: 85%;
+    background-color: var(--light-bg-color);
+    height: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 @media all and (min-width: 600px) {
