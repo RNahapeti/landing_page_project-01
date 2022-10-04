@@ -127,6 +127,10 @@ nav .logo {
     padding: 2rem 0;
 }
 
+.info-cards .container {
+    max-width: 850px;
+}
+
 .info-cards h2 {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -151,14 +155,18 @@ nav .logo {
 }
 
 .card .image-placeholder {
-    width: 10rem;
+    width: 150px;
     border: 4px solid #3883F6;
     border-radius: 15px;
-    min-height: 10rem;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: .5rem;
+}
+
+.card p {
+    width: 150px;
 }
 
 @media all and (min-width: 600px) {
