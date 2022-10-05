@@ -194,6 +194,56 @@ blockquote::after {
     text-align: center;
 }
 
+.CTA {
+    padding: 2rem 0;
+}
+
+.CTA .container {
+    max-width: 1100px;
+}
+
+.CTA .box {
+    background-color: #3883F6;
+    border-radius: 6px;
+    min-height: 6rem;
+    padding: 1.5rem .5rem;
+}
+
+.CTA .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box .CTA-text {
+    text-align: center;
+}
+
+.CTA-text h3 {
+    color: #F9FAF8;
+}
+
+.CTA-text p {
+    color: #E5E7EB;
+    font-weight: 100;
+    margin-bottom: .3rem;
+}
+
+.CTA button {
+    background-color: #3883F6;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: .5rem 2rem;
+    color: white;
+    font-weight: 900;
+}
+
+.CTA button:hover {
+    background-color: white;
+    color: #3883F6;
+    border-color: #3883F6;
+}
+
 @media all and (min-width: 600px) {
     nav .container {
         min-height: 2.5rem;
@@ -259,5 +309,18 @@ blockquote::after {
     .quote .cite {
         text-align: right;
         padding-right: 2rem;
+    }
+
+    .CTA .container2 {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 2rem;
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .box .CTA-text {
+        text-align: left;
     }
 }
