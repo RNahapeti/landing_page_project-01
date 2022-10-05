@@ -244,6 +244,12 @@ blockquote::after {
     border-color: #3883F6;
 }
 
+footer .container {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+}
+
 @media all and (min-width: 600px) {
     nav .container {
         min-height: 2.5rem;
