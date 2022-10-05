@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,700,900');
 
 * {
     box-sizing: border-box;
@@ -95,7 +95,7 @@ nav .logo {
 
 .hero-text button {
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: .5rem 2rem;
     color: white;
     font-weight: 700;
@@ -124,7 +124,7 @@ nav .logo {
 }
 
 .info-cards {
-    padding: 2rem 0;
+    padding: 3.5rem 0;
 }
 
 .info-cards .container {
@@ -169,6 +169,31 @@ nav .logo {
     width: 150px;
 }
 
+.quote {
+    background-color: var(--light-bg-color);
+    padding: 2rem 0;
+}
+
+.quote blockquote {
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+.quote .cite {
+    text-align: center;
+}
+
 @media all and (min-width: 600px) {
     nav .container {
         min-height: 2.5rem;
@@ -193,6 +218,10 @@ nav .logo {
     .cards > * {
         flex: 1 45%;
     }
+
+    .quote .container {
+        width: 80%;
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -212,5 +241,23 @@ nav .logo {
 
     .cards > * {
         flex: 1;
+    }
+
+    .quote {
+        padding: 3.5rem 0;
+    }
+    .quote .container {
+        max-width: 830px;
+    }
+
+    .quote blockquote {
+        text-align: left;
+        margin-bottom: .5rem;
+        font-size: 2.25rem;
+    }
+
+    .quote .cite {
+        text-align: right;
+        padding-right: 2rem;
     }
 }
